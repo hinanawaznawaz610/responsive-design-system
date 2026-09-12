@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Accessible responsive design system and component library">
+
+    <title>Nova UI — Responsive Design System</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Skip Link -->
+    <a class="skip-link" href="#main">
+        Skip to content
+    </a>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="site-header">
+
+        <nav class="navbar container" aria-label="Main navigation">
+
+            <a class="brand" href="#" aria-label="Nova UI home">
+                <span class="brand-mark">N</span>
+                Nova UI
+            </a>
+
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                class="icon-btn mobile-toggle"
+                id="menuBtn"
+                aria-expanded="false"
+                aria-controls="mainMenu"
+                aria-label="Open navigation menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+            <!-- Navigation Menu -->
+
+            <div class="nav-menu" id="mainMenu">
+
+                <a href="#foundations">
+                    Foundations
+                </a>
+
+
+                <!-- Dropdown -->
+
+                <div class="dropdown">
+
+                    <button
+                        class="nav-dropdown-btn"
+                        aria-expanded="false"
+                        aria-controls="componentDropdown">
+
+                        Components
+                        <span aria-hidden="true">⌄</span>
+
+                    </button>
+
+
+                    <div class="dropdown-menu" id="componentDropdown">
+
+                        <a href="#buttons">
+                            Buttons
+                        </a>
+
+                        <a href="#forms">
+                            Forms
+                        </a>
+
+                        <a href="#cards">
+                            Cards
+                        </a>
+
+                        <a href="#feedback">
+                            Feedback
+                        </a>
+
+                        <a href="#data">
+                            Data
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <a href="#accessibility">
+                    Accessibility
+                </a>
+
+
+                <button
+                    class="btn btn-primary nav-cta"
+                    id="navToastBtn">
+
+                    Show Toast
+
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main id="main">
+
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero">
+
+            <div class="container hero-grid">
+
+                <div>
+
+                    <p class="eyebrow">
+                        TASK 16 · PHASE 1
+                    </p>
+
+
+                    <h1>
+                        Responsive Design
+                        <span>System</span>
+                        & Component Library
+                    </h1>
+
+
+                    <p class="hero-copy">
+
+                        A practical, accessible and responsive collection
+                        of reusable interface components with documented
+                        states and interactions.
+
+                    </p>
+
+
+                    <div class="hero-actions">
+
+                        <a
+                            class="btn btn-primary"
+                            href="#components">
+
+                            Explore Components
+
+                        </a>
+
+
+                        <button
+                            class="btn btn-outline"
+                            id="heroModalBtn">
+
+                            Open Modal
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="hero-meta">
+
+                        <span>
+                            ✓ Keyboard accessible
+                        </span>
+
+                        <span>
+                            ✓ Responsive
+                        </span>
+
+                        <span>
+                            ✓ Audit ready
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hero Card -->
+
+                <div
+                    class="hero-card"
+                    aria-label="System summary">
+
+                    <div class="hero-card-top">
+
+                        <span class="status-dot"></span>
+
+                        System status
+
+                    </div>
+
+
+                    <div class="metric">
+
+                        <strong>12+</strong>
+
+                        <span>
+                            Reusable components
+                        </span>
+
+                    </div>
+
+
+                    <div class="metric">
+
+                        <strong>100%</strong>
+
+                        <span>
+                            Responsive layouts
+                        </span>
+
+                    </div>
+
+
+                    <div class="metric">
+
+                        <strong>AA</strong>
+
+                        <span>
+                            Accessibility target
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= FOUNDATIONS ================= -->
+
+        <section
+            id="foundations"
+            class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        01 · FOUNDATIONS
+                    </p>
+
+                    <h2>
+                        Design tokens
+                    </h2>
+
+                    <p>
+                        Consistent visual foundations make every
+                        component predictable and reusable.
+                    </p>
+
+                </div>
+
+
+                <div class="foundation-grid">
+
+
+                    <!-- Colors -->
+
+                    <div class="token-panel">
+
+                        <h3>
+                            Color palette
+                        </h3>
+
+
+                        <div class="swatches">
+
+
+                            <div class="swatch">
+
+                                <i class="swatch-yellow"></i>
+
+                                <span>
+                                    Primary
+                                    <br>
+                                    <small>#F4C430</small>
+                                </span>
+
+                            </div>
+
+
+                            <div class="swatch">
+
+                                <i class="swatch-dark"></i>
+
+                                <span>
+                                    Ink
+                                    <br>
+                                    <small>#171717</small>
+                                </span>
+
+                            </div>
+
+
+                            <div class="swatch">
+
+                                <i class="swatch-surface"></i>
+
+                                <span>
+                                    Surface
+                                    <br>
+                                    <small>#F7F7F5</small>
+                                </span>
+
+                            </div>
+
+
+                            <div class="swatch">
+
+                                <i class="swatch-success"></i>
+
+                                <span>
+                                    Success
+                                    <br>
+                                    <small>#16803C</small>
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Typography -->
+
+                    <div class="token-panel">
+
+                        <h3>
+                            Typography & spacing
+                        </h3>
+
+
+                        <p class="type-xl">
+                            Aa
+                            <span>
+                                Display
+                            </span>
+                        </p>
+
+
+                        <p class="type-md">
+                            Poppins · 16px base ·
+                            1.6 line height
+                        </p>
+
+
+                        <div class="spacing">
+
+                            <span style="--w:24px">
+                                8
+                            </span>
+
+                            <span style="--w:48px">
+                                16
+                            </span>
+
+                            <span style="--w:72px">
+                                24
+                            </span>
+
+                            <span style="--w:96px">
+                                32
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= COMPONENTS ================= -->
+
+        <section
+            id="components"
+            class="section section-alt">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        02 · COMPONENTS
+                    </p>
+
+                    <h2>
+                        Component library
+                    </h2>
+
+                    <p>
+                        Interactive building blocks designed for
+                        desktop, tablet and mobile screens.
+                    </p>
+
+                </div>
+
+
+
+                <!-- ================= BUTTONS ================= -->
+
+                <article
+                    id="buttons"
+                    class="component-card">
+
+                    <div class="component-title">
+
+                        <div>
+
+                            <span class="component-number">
+                                01
+                            </span>
+
+                            <h3>
+                                Buttons
+                            </h3>
+
+                        </div>
+
+                        <code>
+                            .btn
+                        </code>
+
+                    </div>
+
+
+                    <div class="demo-row">
+
+                        <button class="btn btn-primary">
+                            Primary action
+                        </button>
+
+                        <button class="btn btn-secondary">
+                            Secondary
+                        </button>
+
+                        <button class="btn btn-outline">
+                            Outline
+                        </button>
+
+                        <button class="btn btn-danger">
+                            Delete
+                        </button>
+
+                        <button
+                            class="btn btn-primary"
+                            disabled>
+
+                            Disabled
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ================= FORMS ================= -->
+
+                <article
+                    id="forms"
+                    class="component-card">
+
+                    <div class="component-title">
+
+                        <div>
+
+                            <span class="component-number">
+                                02
+                            </span>
+
+                            <h3>
+                                Form elements & validation
+                            </h3>
+
+                        </div>
+
+                        <code>
+                            form-control
+                        </code>
+
+                    </div>
+
+
+                    <form
+                        id="demoForm"
+                        class="form-grid"
+                        novalidate>
+
+
+                        <!-- Name -->
+
+                        <div class="field">
+
+                            <label for="fullName">
+                                Full name
+                                <span>*</span>
+                            </label>
+
+                            <input
+                                id="fullName"
+                                name="fullName"
+                                type="text"
+                                placeholder="Hina Nawaz"
+                                required
+                                minlength="3"
+                                autocomplete="name">
+
+                            <small class="field-msg">
+                                Required field
+                            </small>
+
+                        </div>
+
+
+
+                        <!-- Email -->
+
+                        <div class="field">
+
+                            <label for="email">
+                                Email address
+                                <span>*</span>
+                            </label>
+
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                placeholder="name@example.com"
+                                required
+                                autocomplete="email">
+
+                            <small class="field-msg">
+                                Use a valid email address
+                            </small>
+
+                        </div>
+
+
+
+                        <!-- Role -->
+
+                        <div class="field">
+
+                            <label for="role">
+                                Role
+                            </label>
+
+                            <select
+                                id="role"
+                                name="role">
+
+                                <option value="">
+                                    Select a role
+                                </option>
+
+                                <option>
+                                    Frontend Developer
+                                </option>
+
+                                <option>
+                                    UI Designer
+                                </option>
+
+                                <option>
+                                    Product Manager
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <!-- Message -->
+
+                        <div class="field">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="4"
+                                placeholder="Write your message...">
+                            </textarea>
+
+                        </div>
+
+
+
+                        <div class="form-actions">
+
+                            <button
+                                class="btn btn-primary"
+                                type="submit">
+
+                                Validate form
+
+                            </button>
+
+                            <button
+                                class="btn btn-ghost"
+                                type="reset">
+
+                                Reset
+
+                            </button>
+
+                        </div>
+
+
+                        <div
+                            id="formStatus"
+                            class="form-status"
+                            role="status"
+                            aria-live="polite">
+
+                        </div>
+
+                    </form>
+
+                </article>
+
+
+
+                <!-- ================= CARDS ================= -->
+
+                <article
+                    id="cards"
+                    class="component-card">
+
+                    <div class="component-title">
+
+                        <div>
+
+                            <span class="component-number">
+                                03
+                            </span>
+
+                            <h3>
+                                Cards
+                            </h3>
+
+                        </div>
+
+                        <code>
+                            .card
+                        </code>
+
+                    </div>
+
+
+                    <div class="cards-grid">
+
+
+                        <div class="info-card">
+
+                            <span class="badge badge-yellow">
+                                Featured
+                            </span>
+
+                            <h4>
+                                Design System
+                            </h4>
+
+                            <p>
+                                Reusable patterns that keep interfaces
+                                consistent across products.
+                            </p>
+
+                            <a href="#accessibility">
+                                Learn more →
+                            </a>
+
+                        </div>
+
+
+
+                        <div class="info-card">
+
+                            <span class="badge badge-green">
+                                Active
+                            </span>
+
+                            <h4>
+                                Responsive UI
+                            </h4>
+
+                            <p>
+                                Layouts adapt smoothly to different
+                                viewport sizes and devices.
+                            </p>
+
+                            <a href="#data">
+                                View data →
+                            </a>
+
+                        </div>
+
+
+
+                        <div class="info-card">
+
+                            <span class="badge badge-gray">
+                                Draft
+                            </span>
+
+                            <h4>
+                                Component API
+                            </h4>
+
+                            <p>
+                                Clear states and naming conventions
+                                make components easy to reuse.
+                            </p>
+
+                            <a href="#buttons">
+                                Explore API →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ================= BADGES ================= -->
+
+                <article class="component-card">
+
+                    <div class="component-title">
+
+                        <div>
+
+                            <span class="component-number">
+                                04
+                            </span>
+
+                            <h3>
+                                Badges & avatars
+                            </h3>
+
+                        </div>
+
+                        <code>
+                            .badge · .avatar
+                        </code>
+
+                    </div>
+
+
+                    <div class="demo-row align-center">
+
+                        <span class="badge badge-yellow">
+                            New
+                        </span>
+
+                        <span class="badge badge-green">
+                            Success
+                        </span>
+
+                        <span class="badge badge-red">
+                            Error
+                        </span>
+
+                        <span class="badge badge-gray">
+                            Pending
+                        </span>
+
+
+                        <div
+                            class="avatar-stack"
+                            aria-label="Team members">
+
+                            <span class="avatar">
+                                HN
+                            </span>
+
+                            <span class="avatar avatar-two">
+                                AK
+                            </span>
+
+                            <span class="avatar avatar-three">
+                                SA
+                            </span>
+
+                            <span class="avatar more">
+                                +4
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ================= MODAL & TOAST ================= -->
+
+                <article
+                    id="feedback"
+                    class="component-card">
+
+                    <div class="component-title">
+
+                        <div>
+
+                            <span class="component-number">
+                                05
+                            </span>
+
+                            <h3>
+                                Modal & toast system
+                            </h3>
+
+                        </div>
+
+                        <code>
+                            dialog · toast
+                        </code>
+
+                    </div>
+
+
+                    <div class="demo-row">
+
+                        <button
+                            class="btn btn-primary"
+                            id="modalBtn">
+
+                            Open accessible modal
+
+                        </button>
+
+
+                        <button
+                            class="btn btn-secondary"
+                            id="toastBtn">
+
+                            Success toast
+
+                        </button>
+
+
+                        <button
+                            class="btn btn-outline"
+                            id="errorToastBtn">
+
+                            Error toast
+
+                        </button>
+
+                    </div>
+
+
+                    <p class="helper-text">
+
+                        Modal supports Escape-to-close,
+                        focus trap and body scroll lock.
+                        Toasts use an ARIA live region.
+
+                    </p>
+
+                </article>
+
+
+
+                <!-- ================= DATA TABLE ================= -->
+
+                <article
+                    id="data"
+                    class="component-card">
+
+                    <div class="component-title">
+
+                        <div>
+
+                            <span class="component-number">
+                                06
+                            </span>
+
+                            <h3>
+                                Sortable data table
+                            </h3>
+
+                        </div>
+
+                        <code>
+                            table · sort
+                        </code>
+
+                    </div>
+
+
+                    <div class="table-wrap">
+
+                        <table id="dataTable">
+
+                            <caption class="sr-only">
+                                Project component status table
+                            </caption>
+
+
+                            <thead>
+
+                                <tr>
+
+                                    <th scope="col">
+
+                                        <button
+                                            class="sort-btn"
+                                            data-key="name">
+
+                                            Component
+                                            <span>↕</span>
+
+                                        </button>
+
+                                    </th>
+
+
+                                    <th scope="col">
+
+                                        <button
+                                            class="sort-btn"
+                                            data-key="type">
+
+                                            Type
+                                            <span>↕</span>
+
+                                        </button>
+
+                                    </th>
+
+
+                                    <th scope="col">
+
+                                        <button
+                                            class="sort-btn"
+                                            data-key="status">
+
+                                            Status
+                                            <span>↕</span>
+
+                                        </button>
+
+                                    </th>
+
+
+                                    <th scope="col">
+
+                                        <button
+                                            class="sort-btn"
+                                            data-key="score">
+
+                                            Score
+                                            <span>↕</span>
+
+                                        </button>
+
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <div
+                        class="pagination"
+                        aria-label="Table pagination">
+
+                        <button
+                            class="page-btn"
+                            id="prevPage"
+                            aria-label="Previous page">
+
+                            ‹
+
+                        </button>
+
+
+                        <div id="pageNumbers"></div>
+
+
+                        <button
+                            class="page-btn"
+                            id="nextPage"
+                            aria-label="Next page">
+
+                            ›
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ================= NAVIGATION PREVIEW ================= -->
+
+                <article class="component-card">
+
+                    <div class="component-title">
+
+                        <div>
+
+                            <span class="component-number">
+                                07
+                            </span>
+
+                            <h3>
+                                Navigation & responsive menu
+                            </h3>
+
+                        </div>
+
+                        <code>
+                            nav · dropdown
+                        </code>
+
+                    </div>
+
+
+                    <div class="nav-preview">
+
+                        <span class="brand">
+
+                            <span class="brand-mark">
+                                N
+                            </span>
+
+                            Nova UI
+
+                        </span>
+
+
+                        <div class="preview-links">
+
+                            <a href="#foundations">
+                                Foundations
+                            </a>
+
+                            <button class="preview-drop">
+                                Components ⌄
+                            </button>
+
+                            <button class="btn btn-primary">
+                                Action
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <p class="helper-text">
+
+                        The main navigation above includes a
+                        keyboard-accessible dropdown and a mobile menu.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ACCESSIBILITY ================= -->
+
+        <section
+            id="accessibility"
+            class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        03 · ACCESSIBILITY
+                    </p>
+
+                    <h2>
+                        Built for everyone
+                    </h2>
+
+                    <p>
+                        Accessibility is treated as a core system
+                        requirement, not an afterthought.
+                    </p>
+
+                </div>
+
+
+                <div class="a11y-grid">
+
+
+                    <div class="a11y-item">
+
+                        <strong>
+                            01
+                        </strong>
+
+                        <h3>
+                            Keyboard first
+                        </h3>
+
+                        <p>
+                            All interactive controls are reachable
+                            with Tab and operable with keyboard input.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="a11y-item">
+
+                        <strong>
+                            02
+                        </strong>
+
+                        <h3>
+                            Focus visible
+                        </h3>
+
+                        <p>
+                            Clear focus outlines help users understand
+                            where they are on the page.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="a11y-item">
+
+                        <strong>
+                            03
+                        </strong>
+
+                        <h3>
+                            Semantic HTML
+                        </h3>
+
+                        <p>
+                            Landmarks, headings, labels, buttons and
+                            table headers communicate structure.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="a11y-item">
+
+                        <strong>
+                            04
+                        </strong>
+
+                        <h3>
+                            Screen reader support
+                        </h3>
+
+                        <p>
+                            ARIA labels, live regions and dialog
+                            semantics support assistive technology.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-inner">
+
+            <div>
+
+                <span class="brand">
+
+                    <span class="brand-mark">
+                        N
+                    </span>
+
+                    Nova UI
+
+                </span>
+
+
+                <p>
+                    Responsive Design System · Task 16
+                </p>
+
+            </div>
+
+
+            <span>
+                Built with HTML · CSS · JavaScript
+            </span>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= MODAL ================= -->
+
+    <div
+        class="modal-backdrop"
+        id="modal"
+        hidden>
+
+        <div
+            class="modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalTitle"
+            aria-describedby="modalDesc">
+
+
+            <button
+                class="modal-close"
+                id="modalClose"
+                aria-label="Close modal">
+
+                ×
+
+            </button>
+
+
+            <div class="modal-icon">
+                ✓
+            </div>
+
+
+            <h2 id="modalTitle">
+                Accessible modal
+            </h2>
+
+
+            <p id="modalDesc">
+
+                This modal demonstrates focus management,
+                Escape-to-close and scroll locking.
+
+            </p>
+
+
+            <div class="modal-actions">
+
+                <button
+                    class="btn btn-primary"
+                    id="modalConfirm">
+
+                    Got it
+
+                </button>
+
+
+                <button
+                    class="btn btn-ghost"
+                    id="modalCancel">
+
+                    Cancel
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Toast Region -->
+
+    <div
+        class="toast-region"
+        id="toastRegion"
+        aria-live="polite"
+        aria-atomic="true">
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
